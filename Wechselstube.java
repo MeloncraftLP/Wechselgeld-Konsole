@@ -2,26 +2,24 @@
 
 // alles nochmal durchgehen das ist was konfus!
 
-package WechselStube;
-
 import java.util.Scanner;
 
 public class Wechselstube
 {
 
-//  public class frame()
-// {
-//
-//   JFrame f = new JFrame( "Game" );                     // JFrame intialisieren und betiteln
-//   f.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE ); // Standard Close Methode
-//   f.setSize( 1080, 720 );                             // groesse des Fensters
-//   f.add(new JLabel("Made by Meloncraft"));      // Text im Fenster
-//   f.setResizable(false);                              // nicht vergroeßer oder kleinerbar
-//   f.pack();
-//
-//   f.setVisible (true);
-//
-// }
+  //  public class frame()
+  // {
+  //
+  //   JFrame f = new JFrame( "Game" );                    // JFrame intialisieren und betiteln
+  //   f.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE ); // Standard Close Methode
+  //   f.setSize( 1080, 720 );                             // groesse des Fensters
+  //   f.add(new JLabel("Made by Meloncraft"));            // Text im Fenster
+  //   f.setResizable(false);                              // nicht vergroeßer oder kleinerbar
+  //   f.pack();
+  //
+  //   f.setVisible (true);
+  //
+  // }
 
   // Variablen, die zum berechnen benötigt werden intialisieren!
   public static void main(String[] args)
@@ -47,8 +45,8 @@ public class Wechselstube
 
     // Frage stellen und darauf die Summen einlesen!
     System.out.println("Wie viele Cent haben Sie? Bitte keine Euroangaben!");
-    System.out.println("Geben sie bitte die Beträge mit einem Punkt ein!");
-       System.out.println("Da dieses Programm nicht für Großgeld ausgelegt ist, ist der höchste Schein nur 100€!");
+    System.out.println("Geben sie bitte die Betraege mit einem Kommata ein!");
+       System.out.println("Da dieses Programm nicht fuer Grossgeld ausgelegt ist, ist der hoechste Schein nur 100Euro!");
 
     double SummeDouble = keyboard.nextDouble();
     SummeDouble = SummeDouble * 100;// Summe = double      summe = int
@@ -98,24 +96,151 @@ public class Wechselstube
 
     // Ausgabe des Geldes, dass am besten ist + Ermittlung!
     System.out.println();
-    System.out.println("Sie bekommen" + SummeDouble + "Euro");// !!!ACHTUNG!!! SummeDouble (double)
-    System.out.println(hunderteuro + " 100-Euroschein(e)");
-    System.out.println(fuenfzigeuro + " 50-Euroschein(e)");
-    System.out.println(zwanzigeuro + " 20-Euroschein(e)");
-    System.out.println(zehneuro + " 10-Euroschein(e)");
-    System.out.println(fuenfeuro + " 5-Euroscheine(e)");
-    System.out.println(zweieuro + " 2-Euromünze(n)");
-    System.out.println(euro + " 1-Euromünze(n)");
-    System.out.println(fuenfzigcent + " 50-Centmünze(n)");
-    System.out.println(zwanzigcent + " 20-Centmünze(n)");
-    System.out.println(zehncent + " 10-Centmünze(n)");
-    System.out.println(fuenfcent + " 5-Centmünze(n)");
-    System.out.println(zweicent + " 2-Centmünze(n)");
-    System.out.println(cent + " Centmünze(n)");
+    System.out.println("Sie bekommen " + SummeDouble / 100 + " Euro");// !!!ACHTUNG!!! SummeDouble (double)
+
+    if (hunderteuro > 1)
+    {
+      System.out.println(hunderteuro + " 100-Euroscheine");
+    }
+    else
+    {
+      System.out.println(hunderteuro + " 100-Euroschein");
+    }
+
+/******************************************************************************/
+
+    if (fuenfzigeuro > 1)
+    {
+      System.out.println(fuenfzigeuro + " 50-Euroscheine");
+    }
+    else
+    {
+      System.out.println(fuenfzigeuro + " 50-Euroschein");
+    }
+
+/******************************************************************************/
+    if (zwanzigeuro > 1)
+    {
+      System.out.println(zwanzigeuro + " 20-Euroscheine");
+    }
+    else
+    {
+      System.out.println(zwanzigeuro + " 20-Euroschein");
+    }
+
+/******************************************************************************/
+
+    if (zehneuro > 1)
+    {
+      System.out.println(zehneuro + " 10-Euroscheine");
+    }
+    else
+    {
+      System.out.println(zehneuro + " 10-Euroschein");
+    }
+
+/******************************************************************************/
+
+    if (fuenfeuro > 1)
+    {
+      System.out.println(fuenfeuro + " 5-Euroscheine");
+    }
+    else
+    {
+      System.out.println(fuenfeuro + " 5-Euroschein");
+    }
+
+/******************************************************************************/
+
+    if (zweieuro > 1)
+    {
+      System.out.println(zweieuro + " 2-Euromuenzen");
+    }
+    else
+    {
+    System.out.println(zweieuro + " 2-Euromuenze");
+    }
+
+/******************************************************************************/
+
+    if (euro > 1)
+    {
+      System.out.println(euro + " 1-Euromuenzen");
+    }
+    else
+    {
+      System.out.println(euro + " 1-Euromuenze");
+    }
+
+/******************************************************************************/
+
+    if (fuenfzigcent > 1)
+    {
+      System.out.println(fuenfzigcent + " 50-Centmuenzen");
+    }
+    else
+    {
+      System.out.println(fuenfzigcent + " 50-Centmuenze");
+    }
+
+/******************************************************************************/
+
+    if (zwanzigcent > 1)
+    {
+      System.out.println(zwanzigcent + " 20-Centmuenzen");
+    }
+    else
+    {
+      System.out.println(zwanzigcent + " 20-Centmuenze");
+    }
+
+/******************************************************************************/
+
+    if (zehncent > 1)
+    {
+      System.out.println(zehncent + " 10-Centmuenzen");
+    }
+    else
+    {
+      System.out.println(zehncent + " 10-Centmuenze");
+    }
+
+/******************************************************************************/
+
+    if (fuenfcent > 1)
+    {
+      System.out.println(fuenfcent + " 5-Centmuenzen");
+    }
+    else
+    {
+      System.out.println(fuenfcent + " 5-Centmuenze");
+    }
+
+/******************************************************************************/
+
+    if (zweicent > 1)
+    {
+      System.out.println(zweicent + " 2-Centmuenzen");
+    }
+    else
+    {
+      System.out.println(zweicent + " 2-Centmuenze");
+    }
+
+/******************************************************************************/
+
+    if (cent > 1)
+    {
+      System.out.println(cent + " 1-Centmuenzen");
+    }
+    else
+    {
+      System.out.println(cent + " 1-Centmuenze");
+    }
 
     keyboard.close();
 
-  //  public void ();
+   //  public void ();
 
   }
 
