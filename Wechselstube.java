@@ -2,32 +2,33 @@
 
 // alles nochmal durchgehen das ist was konfus!
 
-package WechselStube2;
+package WechselStube;
 
 import java.util.Scanner;
 
 public class Wechselstube
 {
 
- /* public class frame()
- *{
- *
- * JFrame f = new JFrame( "Game" ); // JFrame intialisieren und betiteln
- *  f.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE ); // Anwendung schließen
- *  f.setSize( 1080, 720 ); // groesse Fensters
- *  f.add(new JLabel("      Made by Meloncraft")); // Text im Fenster
- *  f.setResizable(false); // nicht vergroeßer oder kleinerbar
- *  f.pack();
- *
- *
- *
- *  f.setVisible (true);
- *
- *}
- */
+//  public class frame()
+// {
+//
+//   JFrame f = new JFrame( "Game" );                     // JFrame intialisieren und betiteln
+//   f.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE ); // Standard Close Methode
+//   f.setSize( 1080, 720 );                             // groesse des Fensters
+//   f.add(new JLabel("Made by Meloncraft"));      // Text im Fenster
+//   f.setResizable(false);                              // nicht vergroeßer oder kleinerbar
+//   f.pack();
+//
+//   f.setVisible (true);
+//
+// }
+
   // Variablen, die zum berechnen benötigt werden intialisieren!
-  public static void main(String args[])
+  public static void main(String[] args)
   {
+
+    //frame();
+
     Scanner keyboard = new Scanner(System.in);
     int hunderteuro;
     int fuenfzigeuro;
@@ -49,9 +50,11 @@ public class Wechselstube
     System.out.println("Geben sie bitte die Beträge mit einem Punkt ein!");
        System.out.println("Da dieses Programm nicht für Großgeld ausgelegt ist, ist der höchste Schein nur 100€!");
 
-    double SummeDouble = keyboard.nextInt();
+    double SummeDouble = keyboard.nextDouble();
     SummeDouble = SummeDouble * 100;// Summe = double      summe = int
-    int summe = SummeDouble.intValue();
+    //int summe = SummeDouble.intValue();
+
+    int summe = (int) SummeDouble;
 
     // Nacheinander die möglichen Scheine/Münzen herausrechnen nach Rest-Verfahren
 
@@ -101,7 +104,7 @@ public class Wechselstube
     System.out.println(zwanzigeuro + " 20-Euroschein(e)");
     System.out.println(zehneuro + " 10-Euroschein(e)");
     System.out.println(fuenfeuro + " 5-Euroscheine(e)");
-    System.out.println(zweieuro + " 2-Euromünze(n)");s
+    System.out.println(zweieuro + " 2-Euromünze(n)");
     System.out.println(euro + " 1-Euromünze(n)");
     System.out.println(fuenfzigcent + " 50-Centmünze(n)");
     System.out.println(zwanzigcent + " 20-Centmünze(n)");
@@ -116,6 +119,6 @@ public class Wechselstube
 
   }
 
-
+    // ...
 
 }
