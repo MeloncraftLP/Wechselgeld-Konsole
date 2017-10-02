@@ -1,33 +1,15 @@
 
-
-// alles nochmal durchgehen das ist was konfus!
-
 import java.util.Scanner;
 
 public class Wechselstube
 {
 
-  //  public class frame()
-  // {
-  //
-  //   JFrame f = new JFrame( "Game" );                    // JFrame intialisieren und betiteln
-  //   f.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE ); // Standard Close Methode
-  //   f.setSize( 1080, 720 );                             // groesse des Fensters
-  //   f.add(new JLabel("Made by Meloncraft"));            // Text im Fenster
-  //   f.setResizable(false);                              // nicht vergroeßer oder kleinerbar
-  //   f.pack();
-  //
-  //   f.setVisible (true);
-  //
-  // }
-
   // Variablen, die zum berechnen benötigt werden intialisieren!
   public static void main(String[] args)
   {
-
-    //frame();
-
+    // Keyboardabfrage erstellen
     Scanner keyboard = new Scanner(System.in);
+    //Variablen
     int hunderteuro;
     int fuenfzigeuro;
     int zwanzigeuro;
@@ -48,7 +30,7 @@ public class Wechselstube
     System.out.println("Geben sie bitte die Betraege mit einem Kommata ein!");
        System.out.println("Da dieses Programm nicht fuer Grossgeld ausgelegt ist, ist der hoechste Schein nur 100Euro!");
 
-    double SummeDouble = keyboard.nextDouble();
+    double SummeDouble = keyboard.nextDouble(); // Werte von Tastatur
     SummeDouble = SummeDouble * 100;// Summe = double      summe = int
     //int summe = SummeDouble.intValue();
 
@@ -240,10 +222,6 @@ public class Wechselstube
 
     keyboard.close();
 
-   //  public void ();
-
   }
-
-    // ...
 
 }
