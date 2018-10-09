@@ -31,7 +31,7 @@ public class Wechselstube
     // Frage stellen und darauf die Summen einlesen!
     System.out.println("Wie viele Cent haben Sie? Bitte keine Euroangaben!");
     System.out.println("Geben sie bitte die Betraege mit einem Kommata ein!");
-       System.out.println("Da dieses Programm nicht fuer Grossgeld ausgelegt ist, ist der hoechste Schein nur 100Euro!");
+    System.out.println("Da dieses Programm nicht fuer Grossgeld ausgelegt ist, ist der hoechste Schein nur 100Euro!");
 
     double SummeDouble = keyboard.nextDouble(); // Werte von Tastatur
     SummeDouble = SummeDouble * 100;// Summe = double      summe = int
